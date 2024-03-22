@@ -1,0 +1,52 @@
+
+[Test_Option/Empty/MarshalJSON - 1]
+{"primitive":null}
+---
+
+[Test_Option/Map_empty/MarshalJSON - 1]
+{"primitive":null,"map":{}}
+---
+
+[Test_Option/Map_full/MarshalJSON - 1]
+{"primitive":null,"map":{"make":"Toyota","model":"Hilux"}}
+---
+
+[Test_Option/Map_null/MarshalJSON - 1]
+{"primitive":null,"map":{}}
+---
+
+[Test_Option/Primitive/MarshalJSON - 1]
+{"primitive":"hello world"}
+---
+
+[Test_Option/Primitive_empty/MarshalJSON - 1]
+{"primitive":""}
+---
+
+[Test_Option/Primitive_null/MarshalJSON - 1]
+{"primitive":null}
+---
+
+[Test_Option/Slice_empty/MarshalJSON - 1]
+{"primitive":null,"slice":[]}
+---
+
+[Test_Option/Slice_full/MarshalJSON - 1]
+{"primitive":null,"slice":[1,2,3]}
+---
+
+[Test_Option/Slice_null/MarshalJSON - 1]
+{"primitive":null}
+---
+
+[Test_Option/Struct_empty/MarshalJSON - 1]
+{"primitive":null,"struct":{"Make":"","Model":""}}
+---
+
+[Test_Option/Struct_full/MarshalJSON - 1]
+{"primitive":null,"struct":{"Make":"Toyota","Model":"Hilux"}}
+---
+
+[Test_Option/Struct_null/MarshalJSON - 1]
+{"primitive":null}
+---
