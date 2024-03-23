@@ -251,7 +251,7 @@ false
 ---
 
 [Test_Option/Map_null/Get/Map - 1]
-{}
+null
 ---
 
 [Test_Option/Map_null/Get/Pointer - 1]
@@ -274,7 +274,7 @@ null
 ---
 
 [Test_Option/Map_null/GetWithDefault/Map - 1]
-{}
+null
 ---
 
 [Test_Option/Map_null/GetWithDefault/Pointer - 1]
@@ -301,7 +301,7 @@ default
 ---
 
 [Test_Option/Map_null/MarshalJSON - 1]
-{"primitive":null,"map":{},"struct":null,"slice":null,"pointer":null}
+{"primitive":null,"map":null,"struct":null,"slice":null,"pointer":null}
 ---
 
 [Test_Option/Pointer_full/Exists/Map - 1]
@@ -386,7 +386,7 @@ false
 ---
 
 [Test_Option/Pointer_null/Exists/Pointer - 1]
-false
+true
 ---
 
 [Test_Option/Pointer_null/Exists/Primitive - 1]
@@ -432,7 +432,7 @@ null
 ---
 
 [Test_Option/Pointer_null/GetWithDefault/Pointer - 1]
-true
+null
 ---
 
 [Test_Option/Pointer_null/GetWithDefault/Primitive - 1]
@@ -856,7 +856,7 @@ false
 ---
 
 [Test_Option/Slice_null/Exists/Slice - 1]
-false
+true
 ---
 
 [Test_Option/Slice_null/Exists/Struct - 1]
@@ -902,11 +902,7 @@ default
 ---
 
 [Test_Option/Slice_null/GetWithDefault/Slice - 1]
-[
- 9,
- 8,
- 7
-]
+null
 ---
 
 [Test_Option/Slice_null/GetWithDefault/Struct - 1]

@@ -94,7 +94,7 @@ var (
 		"Map null": {
 			data: []byte(`
 			{
-				"map": {}
+				"map": null
 			}
 		`),
 		},

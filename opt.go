@@ -39,6 +39,13 @@ func (o Option[T]) MarshalJSON() (data []byte, err error) {
 // If the data is "null", the value is not set and UnmarshalJSON returns nil.
 func (o *Option[T]) UnmarshalJSON(data []byte) (err error) {
 	if reflect.DeepEqual(data, nullBytes) {
+		tZeroValue := *(new(T))
+		tKind := reflect.ValueOf(tZeroValue).Kind()
+
+		switch tKind {
+		case reflect.Ptr, reflect.Map, reflect.Slice:
+			o.exists = true
+		}
 		return nil
 	}
 
