@@ -76,6 +76,26 @@ default
 {"primitive":null,"map":null,"struct":null,"slice":null,"pointer":null}
 ---
 
+[Test_Option/Empty/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Empty/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Empty/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Empty/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Empty/String/Struct - 1]
+<empty>
+---
+
 [Test_Option/Map_empty/Exists/Map - 1]
 true
 ---
@@ -148,6 +168,26 @@ default
 
 [Test_Option/Map_empty/MarshalJSON - 1]
 {"primitive":null,"map":{},"struct":null,"slice":null,"pointer":null}
+---
+
+[Test_Option/Map_empty/String/Map - 1]
+map[]
+---
+
+[Test_Option/Map_empty/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Map_empty/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Map_empty/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Map_empty/String/Struct - 1]
+<empty>
 ---
 
 [Test_Option/Map_full/Exists/Map - 1]
@@ -230,6 +270,26 @@ default
 {"primitive":null,"map":{"make":"Toyota","model":"Hilux"},"struct":null,"slice":null,"pointer":null}
 ---
 
+[Test_Option/Map_full/String/Map - 1]
+map[make:Toyota model:Hilux]
+---
+
+[Test_Option/Map_full/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Map_full/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Map_full/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Map_full/String/Struct - 1]
+<empty>
+---
+
 [Test_Option/Map_null/Exists/Map - 1]
 true
 ---
@@ -302,6 +362,26 @@ default
 
 [Test_Option/Map_null/MarshalJSON - 1]
 {"primitive":null,"map":null,"struct":null,"slice":null,"pointer":null}
+---
+
+[Test_Option/Map_null/String/Map - 1]
+map[]
+---
+
+[Test_Option/Map_null/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Map_null/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Map_null/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Map_null/String/Struct - 1]
+<empty>
 ---
 
 [Test_Option/Pointer_full/Exists/Map - 1]
@@ -381,6 +461,26 @@ default
 {"primitive":null,"map":null,"struct":null,"slice":null,"pointer":true}
 ---
 
+[Test_Option/Pointer_full/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Pointer_full/String/Pointer - 1]
+0x1400058e3a8
+---
+
+[Test_Option/Pointer_full/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Pointer_full/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Pointer_full/String/Struct - 1]
+<empty>
+---
+
 [Test_Option/Pointer_null/Exists/Map - 1]
 false
 ---
@@ -456,6 +556,26 @@ default
 
 [Test_Option/Pointer_null/MarshalJSON - 1]
 {"primitive":null,"map":null,"struct":null,"slice":null,"pointer":null}
+---
+
+[Test_Option/Pointer_null/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Pointer_null/String/Pointer - 1]
+<nil>
+---
+
+[Test_Option/Pointer_null/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Pointer_null/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Pointer_null/String/Struct - 1]
+<empty>
 ---
 
 [Test_Option/Primitive/Exists/Map - 1]
@@ -535,6 +655,26 @@ hello world
 {"primitive":"hello world","map":null,"struct":null,"slice":null,"pointer":null}
 ---
 
+[Test_Option/Primitive/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Primitive/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Primitive/String/Primitive - 1]
+hello world
+---
+
+[Test_Option/Primitive/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Primitive/String/Struct - 1]
+<empty>
+---
+
 [Test_Option/Primitive_empty/Exists/Map - 1]
 false
 ---
@@ -610,6 +750,26 @@ true
 
 [Test_Option/Primitive_empty/MarshalJSON - 1]
 {"primitive":"","map":null,"struct":null,"slice":null,"pointer":null}
+---
+
+[Test_Option/Primitive_empty/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Primitive_empty/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Primitive_empty/String/Primitive - 1]
+
+---
+
+[Test_Option/Primitive_empty/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Primitive_empty/String/Struct - 1]
+<empty>
 ---
 
 [Test_Option/Primitive_null/Exists/Map - 1]
@@ -689,6 +849,26 @@ default
 {"primitive":null,"map":null,"struct":null,"slice":null,"pointer":null}
 ---
 
+[Test_Option/Primitive_null/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Primitive_null/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Primitive_null/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Primitive_null/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Primitive_null/String/Struct - 1]
+<empty>
+---
+
 [Test_Option/Slice_empty/Exists/Map - 1]
 false
 ---
@@ -760,6 +940,26 @@ default
 
 [Test_Option/Slice_empty/MarshalJSON - 1]
 {"primitive":null,"map":null,"struct":null,"slice":[],"pointer":null}
+---
+
+[Test_Option/Slice_empty/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Slice_empty/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Slice_empty/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Slice_empty/String/Slice - 1]
+[]
+---
+
+[Test_Option/Slice_empty/String/Struct - 1]
+<empty>
 ---
 
 [Test_Option/Slice_full/Exists/Map - 1]
@@ -843,6 +1043,26 @@ default
 {"primitive":null,"map":null,"struct":null,"slice":[1,2,3],"pointer":null}
 ---
 
+[Test_Option/Slice_full/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Slice_full/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Slice_full/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Slice_full/String/Slice - 1]
+[1 2 3]
+---
+
+[Test_Option/Slice_full/String/Struct - 1]
+<empty>
+---
+
 [Test_Option/Slice_null/Exists/Map - 1]
 false
 ---
@@ -914,6 +1134,26 @@ null
 
 [Test_Option/Slice_null/MarshalJSON - 1]
 {"primitive":null,"map":null,"struct":null,"slice":null,"pointer":null}
+---
+
+[Test_Option/Slice_null/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Slice_null/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Slice_null/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Slice_null/String/Slice - 1]
+[]
+---
+
+[Test_Option/Slice_null/String/Struct - 1]
+<empty>
 ---
 
 [Test_Option/Struct_empty/Exists/Map - 1]
@@ -993,6 +1233,26 @@ default
 {"primitive":null,"map":null,"struct":{"Make":"","Model":""},"slice":null,"pointer":null}
 ---
 
+[Test_Option/Struct_empty/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Struct_empty/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Struct_empty/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Struct_empty/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Struct_empty/String/Struct - 1]
+{ }
+---
+
 [Test_Option/Struct_full/Exists/Map - 1]
 false
 ---
@@ -1070,6 +1330,26 @@ default
 {"primitive":null,"map":null,"struct":{"Make":"Toyota","Model":"Hilux"},"slice":null,"pointer":null}
 ---
 
+[Test_Option/Struct_full/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Struct_full/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Struct_full/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Struct_full/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Struct_full/String/Struct - 1]
+{Toyota Hilux}
+---
+
 [Test_Option/Struct_null/Exists/Map - 1]
 false
 ---
@@ -1145,4 +1425,24 @@ default
 
 [Test_Option/Struct_null/MarshalJSON - 1]
 {"primitive":null,"map":null,"struct":null,"slice":null,"pointer":null}
+---
+
+[Test_Option/Struct_null/String/Map - 1]
+<empty>
+---
+
+[Test_Option/Struct_null/String/Pointer - 1]
+<empty>
+---
+
+[Test_Option/Struct_null/String/Primitive - 1]
+<empty>
+---
+
+[Test_Option/Struct_null/String/Slice - 1]
+<empty>
+---
+
+[Test_Option/Struct_null/String/Struct - 1]
+<empty>
 ---

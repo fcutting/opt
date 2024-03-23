@@ -2,6 +2,7 @@ package opt_test
 
 import (
 	"encoding/json"
+	"fmt"
 	"os"
 	"testing"
 
@@ -184,6 +185,10 @@ func Test_Option(t *testing.T) {
 			t.Run("GetWithDefault", func(t *testing.T) {
 				test_GetWithDefault(t, payload)
 			})
+
+			t.Run("String", func(t *testing.T) {
+				test_String(t, payload)
+			})
 		})
 	}
 }
@@ -261,5 +266,27 @@ func test_GetWithDefault(t *testing.T, payload testPayload) {
 
 	t.Run("Pointer", func(t *testing.T) {
 		snaps.MatchJSON(t, payload.Pointer.GetWithDefault(&pointerDefault))
+	})
+}
+
+func test_String(t *testing.T, payload testPayload) {
+	t.Run("Primitive", func(t *testing.T) {
+		snaps.MatchSnapshot(t, fmt.Sprint(payload.Primitive))
+	})
+
+	t.Run("Map", func(t *testing.T) {
+		snaps.MatchSnapshot(t, fmt.Sprint(payload.Map))
+	})
+
+	t.Run("Struct", func(t *testing.T) {
+		snaps.MatchSnapshot(t, fmt.Sprint(payload.Struct))
+	})
+
+	t.Run("Slice", func(t *testing.T) {
+		snaps.MatchSnapshot(t, fmt.Sprint(payload.Slice))
+	})
+
+	t.Run("Pointer", func(t *testing.T) {
+		snaps.MatchSnapshot(t, fmt.Sprint(payload.Pointer))
 	})
 }

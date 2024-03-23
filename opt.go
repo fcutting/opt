@@ -4,6 +4,7 @@ package opt
 
 import (
 	"encoding/json"
+	"fmt"
 	"reflect"
 )
 
@@ -84,4 +85,14 @@ func (o Option[T]) GetWithDefault(defaultValue T) (value T) {
 	}
 
 	return o.value
+}
+
+// String returns a string representation of the value.
+// If the value is not provided, String returns "<empty>".
+func (o Option[T]) String() (str string) {
+	if !o.exists {
+		return "<empty>"
+	}
+
+	return fmt.Sprint(o.value)
 }
