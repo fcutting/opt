@@ -59,10 +59,9 @@ func (o Option[T]) Exists() (exists bool) {
 }
 
 // Get returns the value.
-// if o is nil, Get returns the zero value of the type.
 // If the value is not provided, Get returns the zero value of the type.
-func (o *Option[T]) Get() (value T) {
-	if o == nil || !o.exists {
+func (o Option[T]) Get() (value T) {
+	if !o.exists {
 		return value
 	}
 
