@@ -16,10 +16,10 @@ func TestMain(m *testing.M) {
 }
 
 type testPayload struct {
-	Primitive opt.Option[string]         `json:"primitive,omitemty"`
-	Map       opt.Option[map[string]any] `json:"map,omitempty"`
-	Struct    opt.Option[testStruct]     `json:"struct,omitempty"`
-	Slice     opt.Option[[]int]          `json:"slice,omitempty"`
+	Primitive opt.Option[string]         `json:"primitive"`
+	Map       opt.Option[map[string]any] `json:"map"`
+	Struct    opt.Option[testStruct]     `json:"struct"`
+	Slice     opt.Option[[]int]          `json:"slice"`
 }
 
 type testStruct struct {
