@@ -70,10 +70,9 @@ func (o Option[T]) Get() (value T) {
 
 // GetWithDefault returns the value, or returns the defaultValue if the value
 // is not provided.
-// If o is nil, GetWithDefault returns the defaultValue.
 // If the value is not provided, GetWithDefault returns the defaultValue.
-func (o *Option[T]) GetWithDefault(defaultValue T) (value T) {
-	if o == nil || !o.exists {
+func (o Option[T]) GetWithDefault(defaultValue T) (value T) {
+	if !o.exists {
 		return defaultValue
 	}
 
