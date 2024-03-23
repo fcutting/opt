@@ -59,3 +59,14 @@ func (o *Option[T]) Exists() (exists bool) {
 
 	return o.exists
 }
+
+// Get returns the value.
+// if o is nil, Get always returns the zero value of the type.
+// If the value is not provided, Get always returns the zero value of the type.
+func (o *Option[T]) Get() (value T) {
+	if o == nil || !o.exists {
+		return value
+	}
+
+	return o.value
+}

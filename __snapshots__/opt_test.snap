@@ -15,6 +15,25 @@ false
 false
 ---
 
+[Test_Option/Empty/Get/Map - 1]
+null
+---
+
+[Test_Option/Empty/Get/Primitive - 1]
+
+---
+
+[Test_Option/Empty/Get/Slice - 1]
+null
+---
+
+[Test_Option/Empty/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Empty/MarshalJSON - 1]
 {"primitive":null}
 ---
@@ -33,6 +52,25 @@ false
 
 [Test_Option/Map_empty/Exists/Struct - 1]
 false
+---
+
+[Test_Option/Map_empty/Get/Map - 1]
+{}
+---
+
+[Test_Option/Map_empty/Get/Primitive - 1]
+
+---
+
+[Test_Option/Map_empty/Get/Slice - 1]
+null
+---
+
+[Test_Option/Map_empty/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
 ---
 
 [Test_Option/Map_empty/MarshalJSON - 1]
@@ -55,6 +93,28 @@ false
 false
 ---
 
+[Test_Option/Map_full/Get/Map - 1]
+{
+ "make": "Toyota",
+ "model": "Hilux"
+}
+---
+
+[Test_Option/Map_full/Get/Primitive - 1]
+
+---
+
+[Test_Option/Map_full/Get/Slice - 1]
+null
+---
+
+[Test_Option/Map_full/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Map_full/MarshalJSON - 1]
 {"primitive":null,"map":{"make":"Toyota","model":"Hilux"}}
 ---
@@ -73,6 +133,25 @@ false
 
 [Test_Option/Map_null/Exists/Struct - 1]
 false
+---
+
+[Test_Option/Map_null/Get/Map - 1]
+{}
+---
+
+[Test_Option/Map_null/Get/Primitive - 1]
+
+---
+
+[Test_Option/Map_null/Get/Slice - 1]
+null
+---
+
+[Test_Option/Map_null/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
 ---
 
 [Test_Option/Map_null/MarshalJSON - 1]
@@ -95,6 +174,25 @@ false
 false
 ---
 
+[Test_Option/Primitive/Get/Map - 1]
+null
+---
+
+[Test_Option/Primitive/Get/Primitive - 1]
+hello world
+---
+
+[Test_Option/Primitive/Get/Slice - 1]
+null
+---
+
+[Test_Option/Primitive/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Primitive/MarshalJSON - 1]
 {"primitive":"hello world"}
 ---
@@ -113,6 +211,25 @@ false
 
 [Test_Option/Primitive_empty/Exists/Struct - 1]
 false
+---
+
+[Test_Option/Primitive_empty/Get/Map - 1]
+null
+---
+
+[Test_Option/Primitive_empty/Get/Primitive - 1]
+
+---
+
+[Test_Option/Primitive_empty/Get/Slice - 1]
+null
+---
+
+[Test_Option/Primitive_empty/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
 ---
 
 [Test_Option/Primitive_empty/MarshalJSON - 1]
@@ -135,6 +252,25 @@ false
 false
 ---
 
+[Test_Option/Primitive_null/Get/Map - 1]
+null
+---
+
+[Test_Option/Primitive_null/Get/Primitive - 1]
+
+---
+
+[Test_Option/Primitive_null/Get/Slice - 1]
+null
+---
+
+[Test_Option/Primitive_null/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Primitive_null/MarshalJSON - 1]
 {"primitive":null}
 ---
@@ -153,6 +289,25 @@ true
 
 [Test_Option/Slice_empty/Exists/Struct - 1]
 false
+---
+
+[Test_Option/Slice_empty/Get/Map - 1]
+null
+---
+
+[Test_Option/Slice_empty/Get/Primitive - 1]
+
+---
+
+[Test_Option/Slice_empty/Get/Slice - 1]
+[]
+---
+
+[Test_Option/Slice_empty/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
 ---
 
 [Test_Option/Slice_empty/MarshalJSON - 1]
@@ -175,6 +330,29 @@ true
 false
 ---
 
+[Test_Option/Slice_full/Get/Map - 1]
+null
+---
+
+[Test_Option/Slice_full/Get/Primitive - 1]
+
+---
+
+[Test_Option/Slice_full/Get/Slice - 1]
+[
+ 1,
+ 2,
+ 3
+]
+---
+
+[Test_Option/Slice_full/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Slice_full/MarshalJSON - 1]
 {"primitive":null,"slice":[1,2,3]}
 ---
@@ -193,6 +371,25 @@ false
 
 [Test_Option/Slice_null/Exists/Struct - 1]
 false
+---
+
+[Test_Option/Slice_null/Get/Map - 1]
+null
+---
+
+[Test_Option/Slice_null/Get/Primitive - 1]
+
+---
+
+[Test_Option/Slice_null/Get/Slice - 1]
+null
+---
+
+[Test_Option/Slice_null/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
 ---
 
 [Test_Option/Slice_null/MarshalJSON - 1]
@@ -215,6 +412,25 @@ false
 true
 ---
 
+[Test_Option/Struct_empty/Get/Map - 1]
+null
+---
+
+[Test_Option/Struct_empty/Get/Primitive - 1]
+
+---
+
+[Test_Option/Struct_empty/Get/Slice - 1]
+null
+---
+
+[Test_Option/Struct_empty/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Struct_empty/MarshalJSON - 1]
 {"primitive":null,"struct":{"Make":"","Model":""}}
 ---
@@ -235,6 +451,25 @@ false
 true
 ---
 
+[Test_Option/Struct_full/Get/Map - 1]
+null
+---
+
+[Test_Option/Struct_full/Get/Primitive - 1]
+
+---
+
+[Test_Option/Struct_full/Get/Slice - 1]
+null
+---
+
+[Test_Option/Struct_full/Get/Struct - 1]
+{
+ "Make": "Toyota",
+ "Model": "Hilux"
+}
+---
+
 [Test_Option/Struct_full/MarshalJSON - 1]
 {"primitive":null,"struct":{"Make":"Toyota","Model":"Hilux"}}
 ---
@@ -253,6 +488,25 @@ false
 
 [Test_Option/Struct_null/Exists/Struct - 1]
 false
+---
+
+[Test_Option/Struct_null/Get/Map - 1]
+null
+---
+
+[Test_Option/Struct_null/Get/Primitive - 1]
+
+---
+
+[Test_Option/Struct_null/Get/Slice - 1]
+null
+---
+
+[Test_Option/Struct_null/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
 ---
 
 [Test_Option/Struct_null/MarshalJSON - 1]

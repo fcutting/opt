@@ -145,6 +145,10 @@ func Test_Option(t *testing.T) {
 			t.Run("Exists", func(t *testing.T) {
 				test_Exists(t, payload)
 			})
+
+			t.Run("Get", func(t *testing.T) {
+				test_Get(t, payload)
+			})
 		})
 	}
 }
@@ -174,5 +178,23 @@ func test_Exists(t *testing.T, payload testPayload) {
 
 	t.Run("Slice", func(t *testing.T) {
 		snaps.MatchJSON(t, payload.Slice.Exists())
+	})
+}
+
+func test_Get(t *testing.T, payload testPayload) {
+	t.Run("Primitive", func(t *testing.T) {
+		snaps.MatchSnapshot(t, payload.Primitive.Get())
+	})
+
+	t.Run("Map", func(t *testing.T) {
+		snaps.MatchJSON(t, payload.Map.Get())
+	})
+
+	t.Run("Struct", func(t *testing.T) {
+		snaps.MatchJSON(t, payload.Struct.Get())
+	})
+
+	t.Run("Slice", func(t *testing.T) {
+		snaps.MatchJSON(t, payload.Slice.Get())
 	})
 }
