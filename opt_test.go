@@ -20,6 +20,7 @@ type testPayload struct {
 	Map       opt.Option[map[string]any] `json:"map"`
 	Struct    opt.Option[testStruct]     `json:"struct"`
 	Slice     opt.Option[[]int]          `json:"slice"`
+	Pointer   opt.Option[*bool]          `json:"pointer"`
 }
 
 type testStruct struct {
@@ -41,7 +42,8 @@ var (
 		Make:  "Audi",
 		Model: "A5",
 	}
-	sliceDefault = []int{9, 8, 7}
+	sliceDefault   = []int{9, 8, 7}
+	pointerDefault = true
 
 	testCases = map[string]testCase{
 		"Empty": {
@@ -141,6 +143,20 @@ var (
 			}
 		`),
 		},
+		"Pointer full": {
+			data: []byte(`
+			{
+				"pointer": true
+			}
+		`),
+		},
+		"Pointer null": {
+			data: []byte(`
+			{
+				"pointer": null
+			}
+		`),
+		},
 	}
 )
 
@@ -198,6 +214,10 @@ func test_Exists(t *testing.T, payload testPayload) {
 	t.Run("Slice", func(t *testing.T) {
 		snaps.MatchJSON(t, payload.Slice.Exists())
 	})
+
+	t.Run("Pointer", func(t *testing.T) {
+		snaps.MatchJSON(t, payload.Pointer.Exists())
+	})
 }
 
 func test_Get(t *testing.T, payload testPayload) {
@@ -216,6 +236,10 @@ func test_Get(t *testing.T, payload testPayload) {
 	t.Run("Slice", func(t *testing.T) {
 		snaps.MatchJSON(t, payload.Slice.Get())
 	})
+
+	t.Run("Pointer", func(t *testing.T) {
+		snaps.MatchJSON(t, payload.Pointer.Get())
+	})
 }
 
 func test_GetWithDefault(t *testing.T, payload testPayload) {
@@ -233,5 +257,9 @@ func test_GetWithDefault(t *testing.T, payload testPayload) {
 
 	t.Run("Slice", func(t *testing.T) {
 		snaps.MatchJSON(t, payload.Slice.GetWithDefault(sliceDefault))
+	})
+
+	t.Run("Pointer", func(t *testing.T) {
+		snaps.MatchJSON(t, payload.Pointer.GetWithDefault(&pointerDefault))
 	})
 }
