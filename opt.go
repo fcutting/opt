@@ -22,8 +22,9 @@ type Option[T any] struct {
 	exists bool
 }
 
-// MarshalJSON converts the Option value to its JSON representation.
-// If the value is not provided, MarshalJSON will return "null".
+// MarshalJSON marshals the Option to JSON.
+// If the value is provided, MarshalJSON marshals the value.
+// If the value is not provided, MarshalJSON returns "null".
 func (o Option[T]) MarshalJSON() (data []byte, err error) {
 	if o.exists {
 		return json.Marshal(o.value)
@@ -32,8 +33,10 @@ func (o Option[T]) MarshalJSON() (data []byte, err error) {
 	return nullBytes, nil
 }
 
-// UnmarshalJSON parses the JSON-encoded data and stores the result in the
-// Option value.
+// UnmarshalJSON unmarshals the Option from JSON.
+// If the data is not "null", UnmarshalJSON unmarshals the value and sets
+// exists to true.
+// If the data is "null", the value is not set and UnmarshalJSON returns nil.
 func (o *Option[T]) UnmarshalJSON(data []byte) (err error) {
 	if reflect.DeepEqual(data, nullBytes) {
 		return nil
