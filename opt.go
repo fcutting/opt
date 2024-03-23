@@ -54,12 +54,7 @@ func (o *Option[T]) UnmarshalJSON(data []byte) (err error) {
 }
 
 // Exists reports whether the value was provided.
-// If o is nil, Exists returns false.
-func (o *Option[T]) Exists() (exists bool) {
-	if o == nil {
-		return false
-	}
-
+func (o Option[T]) Exists() (exists bool) {
 	return o.exists
 }
 
