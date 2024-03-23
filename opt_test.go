@@ -18,55 +18,69 @@ func TestMain(m *testing.M) {
 type testPayload struct {
 	Primitive *opt.Option[string]         `json:"primitive,omitemty"`
 	Map       *opt.Option[map[string]any] `json:"map,omitempty"`
-	Struct    *opt.Option[struct {
-		Make  string
-		Model string
-	}] `json:"struct,omitempty"`
-	Slice *opt.Option[[]int] `json:"slice,omitempty"`
+	Struct    *opt.Option[testStruct]     `json:"struct,omitempty"`
+	Slice     *opt.Option[[]int]          `json:"slice,omitempty"`
+}
+
+type testStruct struct {
+	Make  string
+	Model string
 }
 
 type testCase struct {
 	data []byte
 }
 
-var testCases = map[string]testCase{
-	"Empty": {
-		data: []byte(`
+var (
+	primitiveDefault = "default"
+	mapDefault       = map[string]any{
+		"make":  "Ford",
+		"model": "Focus",
+	}
+	structDefault = testStruct{
+		Make:  "Audi",
+		Model: "A5",
+	}
+	sliceDefault = []int{9, 8, 7}
+
+	testCases = map[string]testCase{
+		"Empty": {
+			data: []byte(`
 			{
 				"empty": true
 			}
 		`),
-	},
-	"Primitive empty": {
-		data: []byte(`
+		},
+		"Primitive empty": {
+			data: []byte(`
 			{
 				"primitive": ""
 			}
 		`),
-	},
-	"Primitive": {
-		data: []byte(`
+		},
+		"Primitive": {
+			data: []byte(`
 			{
 				"primitive": "hello world"
 			}
 		`),
-	},
-	"Primitive null": {
-		data: []byte(`
+		},
+		"Primitive null": {
+			data: []byte(`
 			{
 				"primitive": null
 			}
 		`),
-	},
-	"Map empty": {
-		data: []byte(`
+		},
+		"Map empty": {
+			data: []byte(`
 			{
 				"map": {}
 			}
 		`),
-	},
-	"Map full": {
-		data: []byte(`
+		},
+		"Map full": {
+			data: []byte(`
 			{
 				"map": {
 					"make": "Toyota",
@@ -74,23 +88,23 @@ var testCases = map[string]testCase{
 				}
 			}
 		`),
-	},
-	"Map null": {
-		data: []byte(`
+		},
+		"Map null": {
+			data: []byte(`
 			{
 				"map": {}
 			}
 		`),
-	},
-	"Struct empty": {
-		data: []byte(`
+		},
+		"Struct empty": {
+			data: []byte(`
 			{
 				"struct": {}
 			}
 		`),
-	},
-	"Struct full": {
-		data: []byte(`
+		},
+		"Struct full": {
+			data: []byte(`
 			{
 				"struct": {
 					"make": "Toyota",
@@ -98,36 +112,37 @@ var testCases = map[string]testCase{
 				}
 			}
 		`),
-	},
-	"Struct null": {
-		data: []byte(`
+		},
+		"Struct null": {
+			data: []byte(`
 			{
 				"struct": null
 			}
 		`),
-	},
-	"Slice empty": {
-		data: []byte(`
+		},
+		"Slice empty": {
+			data: []byte(`
 			{
 				"slice": []
 			}
 		`),
-	},
-	"Slice full": {
-		data: []byte(`
+		},
+		"Slice full": {
+			data: []byte(`
 			{
 				"slice": [1, 2, 3]
 			}
 		`),
-	},
-	"Slice null": {
-		data: []byte(`
+		},
+		"Slice null": {
+			data: []byte(`
 			{
 				"slice": null
 			}
 		`),
-	},
-}
+		},
+	}
+)
 
 func Test_Option(t *testing.T) {
 	for n, c := range testCases {
@@ -148,6 +163,10 @@ func Test_Option(t *testing.T) {
 
 			t.Run("Get", func(t *testing.T) {
 				test_Get(t, payload)
+			})
+
+			t.Run("GetWithDefault", func(t *testing.T) {
+				test_GetWithDefault(t, payload)
 			})
 		})
 	}
@@ -196,5 +215,23 @@ func test_Get(t *testing.T, payload testPayload) {
 
 	t.Run("Slice", func(t *testing.T) {
 		snaps.MatchJSON(t, payload.Slice.Get())
+	})
+}
+
+func test_GetWithDefault(t *testing.T, payload testPayload) {
+	t.Run("Primitive", func(t *testing.T) {
+		snaps.MatchSnapshot(t, payload.Primitive.GetWithDefault(primitiveDefault))
+	})
+
+	t.Run("Map", func(t *testing.T) {
+		snaps.MatchJSON(t, payload.Map.GetWithDefault(mapDefault))
+	})
+
+	t.Run("Struct", func(t *testing.T) {
+		snaps.MatchJSON(t, payload.Struct.GetWithDefault(structDefault))
+	})
+
+	t.Run("Slice", func(t *testing.T) {
+		snaps.MatchJSON(t, payload.Slice.GetWithDefault(sliceDefault))
 	})
 }

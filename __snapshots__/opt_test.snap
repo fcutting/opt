@@ -34,6 +34,32 @@ null
 }
 ---
 
+[Test_Option/Empty/GetWithDefault/Map - 1]
+{
+ "make": "Ford",
+ "model": "Focus"
+}
+---
+
+[Test_Option/Empty/GetWithDefault/Primitive - 1]
+default
+---
+
+[Test_Option/Empty/GetWithDefault/Slice - 1]
+[
+ 9,
+ 8,
+ 7
+]
+---
+
+[Test_Option/Empty/GetWithDefault/Struct - 1]
+{
+ "Make": "Audi",
+ "Model": "A5"
+}
+---
+
 [Test_Option/Empty/MarshalJSON - 1]
 {"primitive":null}
 ---
@@ -70,6 +96,29 @@ null
 {
  "Make": "",
  "Model": ""
+}
+---
+
+[Test_Option/Map_empty/GetWithDefault/Map - 1]
+{}
+---
+
+[Test_Option/Map_empty/GetWithDefault/Primitive - 1]
+default
+---
+
+[Test_Option/Map_empty/GetWithDefault/Slice - 1]
+[
+ 9,
+ 8,
+ 7
+]
+---
+
+[Test_Option/Map_empty/GetWithDefault/Struct - 1]
+{
+ "Make": "Audi",
+ "Model": "A5"
 }
 ---
 
@@ -115,6 +164,32 @@ null
 }
 ---
 
+[Test_Option/Map_full/GetWithDefault/Map - 1]
+{
+ "make": "Toyota",
+ "model": "Hilux"
+}
+---
+
+[Test_Option/Map_full/GetWithDefault/Primitive - 1]
+default
+---
+
+[Test_Option/Map_full/GetWithDefault/Slice - 1]
+[
+ 9,
+ 8,
+ 7
+]
+---
+
+[Test_Option/Map_full/GetWithDefault/Struct - 1]
+{
+ "Make": "Audi",
+ "Model": "A5"
+}
+---
+
 [Test_Option/Map_full/MarshalJSON - 1]
 {"primitive":null,"map":{"make":"Toyota","model":"Hilux"}}
 ---
@@ -151,6 +226,29 @@ null
 {
  "Make": "",
  "Model": ""
+}
+---
+
+[Test_Option/Map_null/GetWithDefault/Map - 1]
+{}
+---
+
+[Test_Option/Map_null/GetWithDefault/Primitive - 1]
+default
+---
+
+[Test_Option/Map_null/GetWithDefault/Slice - 1]
+[
+ 9,
+ 8,
+ 7
+]
+---
+
+[Test_Option/Map_null/GetWithDefault/Struct - 1]
+{
+ "Make": "Audi",
+ "Model": "A5"
 }
 ---
 
@@ -193,6 +291,32 @@ null
 }
 ---
 
+[Test_Option/Primitive/GetWithDefault/Map - 1]
+{
+ "make": "Ford",
+ "model": "Focus"
+}
+---
+
+[Test_Option/Primitive/GetWithDefault/Primitive - 1]
+hello world
+---
+
+[Test_Option/Primitive/GetWithDefault/Slice - 1]
+[
+ 9,
+ 8,
+ 7
+]
+---
+
+[Test_Option/Primitive/GetWithDefault/Struct - 1]
+{
+ "Make": "Audi",
+ "Model": "A5"
+}
+---
+
 [Test_Option/Primitive/MarshalJSON - 1]
 {"primitive":"hello world"}
 ---
@@ -229,6 +353,32 @@ null
 {
  "Make": "",
  "Model": ""
+}
+---
+
+[Test_Option/Primitive_empty/GetWithDefault/Map - 1]
+{
+ "make": "Ford",
+ "model": "Focus"
+}
+---
+
+[Test_Option/Primitive_empty/GetWithDefault/Primitive - 1]
+
+---
+
+[Test_Option/Primitive_empty/GetWithDefault/Slice - 1]
+[
+ 9,
+ 8,
+ 7
+]
+---
+
+[Test_Option/Primitive_empty/GetWithDefault/Struct - 1]
+{
+ "Make": "Audi",
+ "Model": "A5"
 }
 ---
 
@@ -271,6 +421,32 @@ null
 }
 ---
 
+[Test_Option/Primitive_null/GetWithDefault/Map - 1]
+{
+ "make": "Ford",
+ "model": "Focus"
+}
+---
+
+[Test_Option/Primitive_null/GetWithDefault/Primitive - 1]
+default
+---
+
+[Test_Option/Primitive_null/GetWithDefault/Slice - 1]
+[
+ 9,
+ 8,
+ 7
+]
+---
+
+[Test_Option/Primitive_null/GetWithDefault/Struct - 1]
+{
+ "Make": "Audi",
+ "Model": "A5"
+}
+---
+
 [Test_Option/Primitive_null/MarshalJSON - 1]
 {"primitive":null}
 ---
@@ -307,6 +483,28 @@ null
 {
  "Make": "",
  "Model": ""
+}
+---
+
+[Test_Option/Slice_empty/GetWithDefault/Map - 1]
+{
+ "make": "Ford",
+ "model": "Focus"
+}
+---
+
+[Test_Option/Slice_empty/GetWithDefault/Primitive - 1]
+default
+---
+
+[Test_Option/Slice_empty/GetWithDefault/Slice - 1]
+[]
+---
+
+[Test_Option/Slice_empty/GetWithDefault/Struct - 1]
+{
+ "Make": "Audi",
+ "Model": "A5"
 }
 ---
 
@@ -353,6 +551,32 @@ null
 }
 ---
 
+[Test_Option/Slice_full/GetWithDefault/Map - 1]
+{
+ "make": "Ford",
+ "model": "Focus"
+}
+---
+
+[Test_Option/Slice_full/GetWithDefault/Primitive - 1]
+default
+---
+
+[Test_Option/Slice_full/GetWithDefault/Slice - 1]
+[
+ 1,
+ 2,
+ 3
+]
+---
+
+[Test_Option/Slice_full/GetWithDefault/Struct - 1]
+{
+ "Make": "Audi",
+ "Model": "A5"
+}
+---
+
 [Test_Option/Slice_full/MarshalJSON - 1]
 {"primitive":null,"slice":[1,2,3]}
 ---
@@ -392,6 +616,32 @@ null
 }
 ---
 
+[Test_Option/Slice_null/GetWithDefault/Map - 1]
+{
+ "make": "Ford",
+ "model": "Focus"
+}
+---
+
+[Test_Option/Slice_null/GetWithDefault/Primitive - 1]
+default
+---
+
+[Test_Option/Slice_null/GetWithDefault/Slice - 1]
+[
+ 9,
+ 8,
+ 7
+]
+---
+
+[Test_Option/Slice_null/GetWithDefault/Struct - 1]
+{
+ "Make": "Audi",
+ "Model": "A5"
+}
+---
+
 [Test_Option/Slice_null/MarshalJSON - 1]
 {"primitive":null}
 ---
@@ -425,6 +675,32 @@ null
 ---
 
 [Test_Option/Struct_empty/Get/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
+[Test_Option/Struct_empty/GetWithDefault/Map - 1]
+{
+ "make": "Ford",
+ "model": "Focus"
+}
+---
+
+[Test_Option/Struct_empty/GetWithDefault/Primitive - 1]
+default
+---
+
+[Test_Option/Struct_empty/GetWithDefault/Slice - 1]
+[
+ 9,
+ 8,
+ 7
+]
+---
+
+[Test_Option/Struct_empty/GetWithDefault/Struct - 1]
 {
  "Make": "",
  "Model": ""
@@ -470,6 +746,32 @@ null
 }
 ---
 
+[Test_Option/Struct_full/GetWithDefault/Map - 1]
+{
+ "make": "Ford",
+ "model": "Focus"
+}
+---
+
+[Test_Option/Struct_full/GetWithDefault/Primitive - 1]
+default
+---
+
+[Test_Option/Struct_full/GetWithDefault/Slice - 1]
+[
+ 9,
+ 8,
+ 7
+]
+---
+
+[Test_Option/Struct_full/GetWithDefault/Struct - 1]
+{
+ "Make": "Toyota",
+ "Model": "Hilux"
+}
+---
+
 [Test_Option/Struct_full/MarshalJSON - 1]
 {"primitive":null,"struct":{"Make":"Toyota","Model":"Hilux"}}
 ---
@@ -506,6 +808,32 @@ null
 {
  "Make": "",
  "Model": ""
+}
+---
+
+[Test_Option/Struct_null/GetWithDefault/Map - 1]
+{
+ "make": "Ford",
+ "model": "Focus"
+}
+---
+
+[Test_Option/Struct_null/GetWithDefault/Primitive - 1]
+default
+---
+
+[Test_Option/Struct_null/GetWithDefault/Slice - 1]
+[
+ 9,
+ 8,
+ 7
+]
+---
+
+[Test_Option/Struct_null/GetWithDefault/Struct - 1]
+{
+ "Make": "Audi",
+ "Model": "A5"
 }
 ---
 
