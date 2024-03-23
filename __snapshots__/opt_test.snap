@@ -61,7 +61,7 @@ default
 ---
 
 [Test_Option/Empty/MarshalJSON - 1]
-{"primitive":null}
+{"primitive":null,"map":null,"struct":null,"slice":null}
 ---
 
 [Test_Option/Map_empty/Exists/Map - 1]
@@ -123,7 +123,7 @@ default
 ---
 
 [Test_Option/Map_empty/MarshalJSON - 1]
-{"primitive":null,"map":{}}
+{"primitive":null,"map":{},"struct":null,"slice":null}
 ---
 
 [Test_Option/Map_full/Exists/Map - 1]
@@ -191,7 +191,7 @@ default
 ---
 
 [Test_Option/Map_full/MarshalJSON - 1]
-{"primitive":null,"map":{"make":"Toyota","model":"Hilux"}}
+{"primitive":null,"map":{"make":"Toyota","model":"Hilux"},"struct":null,"slice":null}
 ---
 
 [Test_Option/Map_null/Exists/Map - 1]
@@ -253,7 +253,7 @@ default
 ---
 
 [Test_Option/Map_null/MarshalJSON - 1]
-{"primitive":null,"map":{}}
+{"primitive":null,"map":{},"struct":null,"slice":null}
 ---
 
 [Test_Option/Primitive/Exists/Map - 1]
@@ -318,7 +318,7 @@ hello world
 ---
 
 [Test_Option/Primitive/MarshalJSON - 1]
-{"primitive":"hello world"}
+{"primitive":"hello world","map":null,"struct":null,"slice":null}
 ---
 
 [Test_Option/Primitive_empty/Exists/Map - 1]
@@ -383,7 +383,7 @@ null
 ---
 
 [Test_Option/Primitive_empty/MarshalJSON - 1]
-{"primitive":""}
+{"primitive":"","map":null,"struct":null,"slice":null}
 ---
 
 [Test_Option/Primitive_null/Exists/Map - 1]
@@ -448,7 +448,7 @@ default
 ---
 
 [Test_Option/Primitive_null/MarshalJSON - 1]
-{"primitive":null}
+{"primitive":null,"map":null,"struct":null,"slice":null}
 ---
 
 [Test_Option/Slice_empty/Exists/Map - 1]
@@ -509,7 +509,7 @@ default
 ---
 
 [Test_Option/Slice_empty/MarshalJSON - 1]
-{"primitive":null,"slice":[]}
+{"primitive":null,"map":null,"struct":null,"slice":[]}
 ---
 
 [Test_Option/Slice_full/Exists/Map - 1]
@@ -578,7 +578,7 @@ default
 ---
 
 [Test_Option/Slice_full/MarshalJSON - 1]
-{"primitive":null,"slice":[1,2,3]}
+{"primitive":null,"map":null,"struct":null,"slice":[1,2,3]}
 ---
 
 [Test_Option/Slice_null/Exists/Map - 1]
@@ -643,7 +643,7 @@ default
 ---
 
 [Test_Option/Slice_null/MarshalJSON - 1]
-{"primitive":null}
+{"primitive":null,"map":null,"struct":null,"slice":null}
 ---
 
 [Test_Option/Struct_empty/Exists/Map - 1]
@@ -708,7 +708,7 @@ default
 ---
 
 [Test_Option/Struct_empty/MarshalJSON - 1]
-{"primitive":null,"struct":{"Make":"","Model":""}}
+{"primitive":null,"map":null,"struct":{"Make":"","Model":""},"slice":null}
 ---
 
 [Test_Option/Struct_full/Exists/Map - 1]
@@ -773,7 +773,7 @@ default
 ---
 
 [Test_Option/Struct_full/MarshalJSON - 1]
-{"primitive":null,"struct":{"Make":"Toyota","Model":"Hilux"}}
+{"primitive":null,"map":null,"struct":{"Make":"Toyota","Model":"Hilux"},"slice":null}
 ---
 
 [Test_Option/Struct_null/Exists/Map - 1]
@@ -838,5 +838,5 @@ default
 ---
 
 [Test_Option/Struct_null/MarshalJSON - 1]
-{"primitive":null}
+{"primitive":null,"map":null,"struct":null,"slice":null}
 ---
