@@ -76,9 +76,9 @@ func (o Option[T]) Exists() (exists bool) {
 	return o.exists
 }
 
-// Get returns the value.
+// Unwrap returns the value.
 // If the value is not provided, Get returns the zero value of the type.
-func (o Option[T]) Get() (value T) {
+func (o Option[T]) Unwrap() (value T) {
 	if !o.exists {
 		return value
 	}

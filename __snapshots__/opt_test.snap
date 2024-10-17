@@ -19,29 +19,6 @@ false
 false
 ---
 
-[Test_Option/Empty/Get/Map - 1]
-null
----
-
-[Test_Option/Empty/Get/Pointer - 1]
-null
----
-
-[Test_Option/Empty/Get/Primitive - 1]
-
----
-
-[Test_Option/Empty/Get/Slice - 1]
-null
----
-
-[Test_Option/Empty/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
----
-
 [Test_Option/Empty/GetWithDefault/Map - 1]
 {
  "make": "Ford",
@@ -92,6 +69,29 @@ default
 <empty>
 ---
 
+[Test_Option/Empty/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Empty/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Empty/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Empty/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Empty/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Map_empty/Exists/Map - 1]
 true
 ---
@@ -110,29 +110,6 @@ false
 
 [Test_Option/Map_empty/Exists/Struct - 1]
 false
----
-
-[Test_Option/Map_empty/Get/Map - 1]
-{}
----
-
-[Test_Option/Map_empty/Get/Pointer - 1]
-null
----
-
-[Test_Option/Map_empty/Get/Primitive - 1]
-
----
-
-[Test_Option/Map_empty/Get/Slice - 1]
-null
----
-
-[Test_Option/Map_empty/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Map_empty/GetWithDefault/Map - 1]
@@ -182,6 +159,29 @@ map[]
 <empty>
 ---
 
+[Test_Option/Map_empty/Unwrap/Map - 1]
+{}
+---
+
+[Test_Option/Map_empty/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Map_empty/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Map_empty/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Map_empty/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Map_full/Exists/Map - 1]
 true
 ---
@@ -200,32 +200,6 @@ false
 
 [Test_Option/Map_full/Exists/Struct - 1]
 false
----
-
-[Test_Option/Map_full/Get/Map - 1]
-{
- "make": "Toyota",
- "model": "Hilux"
-}
----
-
-[Test_Option/Map_full/Get/Pointer - 1]
-null
----
-
-[Test_Option/Map_full/Get/Primitive - 1]
-
----
-
-[Test_Option/Map_full/Get/Slice - 1]
-null
----
-
-[Test_Option/Map_full/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Map_full/GetWithDefault/Map - 1]
@@ -278,6 +252,32 @@ map[make:Toyota model:Hilux]
 <empty>
 ---
 
+[Test_Option/Map_full/Unwrap/Map - 1]
+{
+ "make": "Toyota",
+ "model": "Hilux"
+}
+---
+
+[Test_Option/Map_full/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Map_full/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Map_full/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Map_full/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Map_null/Exists/Map - 1]
 true
 ---
@@ -296,29 +296,6 @@ false
 
 [Test_Option/Map_null/Exists/Struct - 1]
 false
----
-
-[Test_Option/Map_null/Get/Map - 1]
-null
----
-
-[Test_Option/Map_null/Get/Pointer - 1]
-null
----
-
-[Test_Option/Map_null/Get/Primitive - 1]
-
----
-
-[Test_Option/Map_null/Get/Slice - 1]
-null
----
-
-[Test_Option/Map_null/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Map_null/GetWithDefault/Map - 1]
@@ -368,6 +345,29 @@ map[]
 <empty>
 ---
 
+[Test_Option/Map_null/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Map_null/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Map_null/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Map_null/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Map_null/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Pointer_full/Exists/Map - 1]
 false
 ---
@@ -386,29 +386,6 @@ false
 
 [Test_Option/Pointer_full/Exists/Struct - 1]
 false
----
-
-[Test_Option/Pointer_full/Get/Map - 1]
-null
----
-
-[Test_Option/Pointer_full/Get/Pointer - 1]
-true
----
-
-[Test_Option/Pointer_full/Get/Primitive - 1]
-
----
-
-[Test_Option/Pointer_full/Get/Slice - 1]
-null
----
-
-[Test_Option/Pointer_full/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Pointer_full/GetWithDefault/Map - 1]
@@ -461,6 +438,29 @@ default
 <empty>
 ---
 
+[Test_Option/Pointer_full/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Pointer_full/Unwrap/Pointer - 1]
+true
+---
+
+[Test_Option/Pointer_full/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Pointer_full/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Pointer_full/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Pointer_null/Exists/Map - 1]
 false
 ---
@@ -479,29 +479,6 @@ false
 
 [Test_Option/Pointer_null/Exists/Struct - 1]
 false
----
-
-[Test_Option/Pointer_null/Get/Map - 1]
-null
----
-
-[Test_Option/Pointer_null/Get/Pointer - 1]
-null
----
-
-[Test_Option/Pointer_null/Get/Primitive - 1]
-
----
-
-[Test_Option/Pointer_null/Get/Slice - 1]
-null
----
-
-[Test_Option/Pointer_null/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Pointer_null/GetWithDefault/Map - 1]
@@ -554,6 +531,29 @@ default
 <empty>
 ---
 
+[Test_Option/Pointer_null/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Pointer_null/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Pointer_null/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Pointer_null/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Pointer_null/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Primitive/Exists/Map - 1]
 false
 ---
@@ -572,29 +572,6 @@ false
 
 [Test_Option/Primitive/Exists/Struct - 1]
 false
----
-
-[Test_Option/Primitive/Get/Map - 1]
-null
----
-
-[Test_Option/Primitive/Get/Pointer - 1]
-null
----
-
-[Test_Option/Primitive/Get/Primitive - 1]
-hello world
----
-
-[Test_Option/Primitive/Get/Slice - 1]
-null
----
-
-[Test_Option/Primitive/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Primitive/GetWithDefault/Map - 1]
@@ -647,6 +624,29 @@ hello world
 <empty>
 ---
 
+[Test_Option/Primitive/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Primitive/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Primitive/Unwrap/Primitive - 1]
+hello world
+---
+
+[Test_Option/Primitive/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Primitive/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Primitive_empty/Exists/Map - 1]
 false
 ---
@@ -665,29 +665,6 @@ false
 
 [Test_Option/Primitive_empty/Exists/Struct - 1]
 false
----
-
-[Test_Option/Primitive_empty/Get/Map - 1]
-null
----
-
-[Test_Option/Primitive_empty/Get/Pointer - 1]
-null
----
-
-[Test_Option/Primitive_empty/Get/Primitive - 1]
-
----
-
-[Test_Option/Primitive_empty/Get/Slice - 1]
-null
----
-
-[Test_Option/Primitive_empty/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Primitive_empty/GetWithDefault/Map - 1]
@@ -740,6 +717,29 @@ true
 <empty>
 ---
 
+[Test_Option/Primitive_empty/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Primitive_empty/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Primitive_empty/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Primitive_empty/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Primitive_empty/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Primitive_null/Exists/Map - 1]
 false
 ---
@@ -758,29 +758,6 @@ false
 
 [Test_Option/Primitive_null/Exists/Struct - 1]
 false
----
-
-[Test_Option/Primitive_null/Get/Map - 1]
-null
----
-
-[Test_Option/Primitive_null/Get/Pointer - 1]
-null
----
-
-[Test_Option/Primitive_null/Get/Primitive - 1]
-
----
-
-[Test_Option/Primitive_null/Get/Slice - 1]
-null
----
-
-[Test_Option/Primitive_null/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Primitive_null/GetWithDefault/Map - 1]
@@ -833,6 +810,29 @@ default
 <empty>
 ---
 
+[Test_Option/Primitive_null/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Primitive_null/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Primitive_null/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Primitive_null/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Primitive_null/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Slice_empty/Exists/Map - 1]
 false
 ---
@@ -851,29 +851,6 @@ true
 
 [Test_Option/Slice_empty/Exists/Struct - 1]
 false
----
-
-[Test_Option/Slice_empty/Get/Map - 1]
-null
----
-
-[Test_Option/Slice_empty/Get/Pointer - 1]
-null
----
-
-[Test_Option/Slice_empty/Get/Primitive - 1]
-
----
-
-[Test_Option/Slice_empty/Get/Slice - 1]
-[]
----
-
-[Test_Option/Slice_empty/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Slice_empty/GetWithDefault/Map - 1]
@@ -922,6 +899,29 @@ default
 <empty>
 ---
 
+[Test_Option/Slice_empty/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Slice_empty/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Slice_empty/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Slice_empty/Unwrap/Slice - 1]
+[]
+---
+
+[Test_Option/Slice_empty/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Slice_full/Exists/Map - 1]
 false
 ---
@@ -940,33 +940,6 @@ true
 
 [Test_Option/Slice_full/Exists/Struct - 1]
 false
----
-
-[Test_Option/Slice_full/Get/Map - 1]
-null
----
-
-[Test_Option/Slice_full/Get/Pointer - 1]
-null
----
-
-[Test_Option/Slice_full/Get/Primitive - 1]
-
----
-
-[Test_Option/Slice_full/Get/Slice - 1]
-[
- 1,
- 2,
- 3
-]
----
-
-[Test_Option/Slice_full/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Slice_full/GetWithDefault/Map - 1]
@@ -1019,6 +992,33 @@ default
 <empty>
 ---
 
+[Test_Option/Slice_full/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Slice_full/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Slice_full/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Slice_full/Unwrap/Slice - 1]
+[
+ 1,
+ 2,
+ 3
+]
+---
+
+[Test_Option/Slice_full/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Slice_null/Exists/Map - 1]
 false
 ---
@@ -1037,29 +1037,6 @@ true
 
 [Test_Option/Slice_null/Exists/Struct - 1]
 false
----
-
-[Test_Option/Slice_null/Get/Map - 1]
-null
----
-
-[Test_Option/Slice_null/Get/Pointer - 1]
-null
----
-
-[Test_Option/Slice_null/Get/Primitive - 1]
-
----
-
-[Test_Option/Slice_null/Get/Slice - 1]
-null
----
-
-[Test_Option/Slice_null/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Slice_null/GetWithDefault/Map - 1]
@@ -1108,6 +1085,29 @@ null
 <empty>
 ---
 
+[Test_Option/Slice_null/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Slice_null/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Slice_null/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Slice_null/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Slice_null/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Struct_empty/Exists/Map - 1]
 false
 ---
@@ -1126,29 +1126,6 @@ false
 
 [Test_Option/Struct_empty/Exists/Struct - 1]
 true
----
-
-[Test_Option/Struct_empty/Get/Map - 1]
-null
----
-
-[Test_Option/Struct_empty/Get/Pointer - 1]
-null
----
-
-[Test_Option/Struct_empty/Get/Primitive - 1]
-
----
-
-[Test_Option/Struct_empty/Get/Slice - 1]
-null
----
-
-[Test_Option/Struct_empty/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Struct_empty/GetWithDefault/Map - 1]
@@ -1201,6 +1178,29 @@ default
 { }
 ---
 
+[Test_Option/Struct_empty/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Struct_empty/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Struct_empty/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Struct_empty/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Struct_empty/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
+---
+
 [Test_Option/Struct_full/Exists/Map - 1]
 false
 ---
@@ -1219,29 +1219,6 @@ false
 
 [Test_Option/Struct_full/Exists/Struct - 1]
 true
----
-
-[Test_Option/Struct_full/Get/Map - 1]
-null
----
-
-[Test_Option/Struct_full/Get/Pointer - 1]
-null
----
-
-[Test_Option/Struct_full/Get/Primitive - 1]
-
----
-
-[Test_Option/Struct_full/Get/Slice - 1]
-null
----
-
-[Test_Option/Struct_full/Get/Struct - 1]
-{
- "Make": "Toyota",
- "Model": "Hilux"
-}
 ---
 
 [Test_Option/Struct_full/GetWithDefault/Map - 1]
@@ -1294,6 +1271,29 @@ default
 {Toyota Hilux}
 ---
 
+[Test_Option/Struct_full/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Struct_full/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Struct_full/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Struct_full/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Struct_full/Unwrap/Struct - 1]
+{
+ "Make": "Toyota",
+ "Model": "Hilux"
+}
+---
+
 [Test_Option/Struct_null/Exists/Map - 1]
 false
 ---
@@ -1312,29 +1312,6 @@ false
 
 [Test_Option/Struct_null/Exists/Struct - 1]
 false
----
-
-[Test_Option/Struct_null/Get/Map - 1]
-null
----
-
-[Test_Option/Struct_null/Get/Pointer - 1]
-null
----
-
-[Test_Option/Struct_null/Get/Primitive - 1]
-
----
-
-[Test_Option/Struct_null/Get/Slice - 1]
-null
----
-
-[Test_Option/Struct_null/Get/Struct - 1]
-{
- "Make": "",
- "Model": ""
-}
 ---
 
 [Test_Option/Struct_null/GetWithDefault/Map - 1]
@@ -1385,4 +1362,27 @@ default
 
 [Test_Option/Struct_null/String/Struct - 1]
 <empty>
+---
+
+[Test_Option/Struct_null/Unwrap/Map - 1]
+null
+---
+
+[Test_Option/Struct_null/Unwrap/Pointer - 1]
+null
+---
+
+[Test_Option/Struct_null/Unwrap/Primitive - 1]
+
+---
+
+[Test_Option/Struct_null/Unwrap/Slice - 1]
+null
+---
+
+[Test_Option/Struct_null/Unwrap/Struct - 1]
+{
+ "Make": "",
+ "Model": ""
+}
 ---

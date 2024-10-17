@@ -178,8 +178,8 @@ func Test_Option(t *testing.T) {
 				test_Exists(t, payload)
 			})
 
-			t.Run("Get", func(t *testing.T) {
-				test_Get(t, payload)
+			t.Run("Unwrap", func(t *testing.T) {
+				test_Unwrap(t, payload)
 			})
 
 			t.Run("GetWithDefault", func(t *testing.T) {
@@ -225,25 +225,25 @@ func test_Exists(t *testing.T, payload testPayload) {
 	})
 }
 
-func test_Get(t *testing.T, payload testPayload) {
+func test_Unwrap(t *testing.T, payload testPayload) {
 	t.Run("Primitive", func(t *testing.T) {
-		snaps.MatchSnapshot(t, payload.Primitive.Get())
+		snaps.MatchSnapshot(t, payload.Primitive.Unwrap())
 	})
 
 	t.Run("Map", func(t *testing.T) {
-		snaps.MatchJSON(t, payload.Map.Get())
+		snaps.MatchJSON(t, payload.Map.Unwrap())
 	})
 
 	t.Run("Struct", func(t *testing.T) {
-		snaps.MatchJSON(t, payload.Struct.Get())
+		snaps.MatchJSON(t, payload.Struct.Unwrap())
 	})
 
 	t.Run("Slice", func(t *testing.T) {
-		snaps.MatchJSON(t, payload.Slice.Get())
+		snaps.MatchJSON(t, payload.Slice.Unwrap())
 	})
 
 	t.Run("Pointer", func(t *testing.T) {
-		snaps.MatchJSON(t, payload.Pointer.Get())
+		snaps.MatchJSON(t, payload.Pointer.Unwrap())
 	})
 }
 
