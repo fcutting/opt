@@ -1,2 +1,2 @@
 # opt
-Generic Optional type implementation for Go
+Generic optional type implementation for Go
