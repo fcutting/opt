@@ -86,6 +86,12 @@ func (o Option[T]) Unwrap() (value T) {
 	return o.value
 }
 
+// MustUnwrap returns the value.
+// If the value is not provided, MustUnwrap may panic.
+func (o Option[T]) MustUnwrap() (value T) {
+	return o.value
+}
+
 // UnwrapDefault returns the value, or returns the defaultValue if the value
 // is not provided.
 // If the value is not provided, UnwrapDefault returns the defaultValue.
