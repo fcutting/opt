@@ -182,8 +182,8 @@ func Test_Option(t *testing.T) {
 				test_Unwrap(t, payload)
 			})
 
-			t.Run("GetWithDefault", func(t *testing.T) {
-				test_GetWithDefault(t, payload)
+			t.Run("UnwrapDefault", func(t *testing.T) {
+				test_UnwrapDefault(t, payload)
 			})
 
 			t.Run("String", func(t *testing.T) {
@@ -247,25 +247,25 @@ func test_Unwrap(t *testing.T, payload testPayload) {
 	})
 }
 
-func test_GetWithDefault(t *testing.T, payload testPayload) {
+func test_UnwrapDefault(t *testing.T, payload testPayload) {
 	t.Run("Primitive", func(t *testing.T) {
-		snaps.MatchSnapshot(t, payload.Primitive.GetWithDefault(primitiveDefault))
+		snaps.MatchSnapshot(t, payload.Primitive.UnwrapDefault(primitiveDefault))
 	})
 
 	t.Run("Map", func(t *testing.T) {
-		snaps.MatchJSON(t, payload.Map.GetWithDefault(mapDefault))
+		snaps.MatchJSON(t, payload.Map.UnwrapDefault(mapDefault))
 	})
 
 	t.Run("Struct", func(t *testing.T) {
-		snaps.MatchJSON(t, payload.Struct.GetWithDefault(structDefault))
+		snaps.MatchJSON(t, payload.Struct.UnwrapDefault(structDefault))
 	})
 
 	t.Run("Slice", func(t *testing.T) {
-		snaps.MatchJSON(t, payload.Slice.GetWithDefault(sliceDefault))
+		snaps.MatchJSON(t, payload.Slice.UnwrapDefault(sliceDefault))
 	})
 
 	t.Run("Pointer", func(t *testing.T) {
-		snaps.MatchJSON(t, payload.Pointer.GetWithDefault(&pointerDefault))
+		snaps.MatchJSON(t, payload.Pointer.UnwrapDefault(&pointerDefault))
 	})
 }
 

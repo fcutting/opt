@@ -77,7 +77,7 @@ func (o Option[T]) Exists() (exists bool) {
 }
 
 // Unwrap returns the value.
-// If the value is not provided, Get returns the zero value of the type.
+// If the value is not provided, Unwrap returns the zero value of the type.
 func (o Option[T]) Unwrap() (value T) {
 	if !o.exists {
 		return value
@@ -86,10 +86,10 @@ func (o Option[T]) Unwrap() (value T) {
 	return o.value
 }
 
-// GetWithDefault returns the value, or returns the defaultValue if the value
+// UnwrapDefault returns the value, or returns the defaultValue if the value
 // is not provided.
-// If the value is not provided, GetWithDefault returns the defaultValue.
-func (o Option[T]) GetWithDefault(defaultValue T) (value T) {
+// If the value is not provided, UnwrapDefault returns the defaultValue.
+func (o Option[T]) UnwrapDefault(defaultValue T) (value T) {
 	if !o.exists {
 		return defaultValue
 	}
