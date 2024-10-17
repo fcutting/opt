@@ -285,8 +285,4 @@ func test_String(t *testing.T, payload testPayload) {
 	t.Run("Slice", func(t *testing.T) {
 		snaps.MatchSnapshot(t, fmt.Sprint(payload.Slice))
 	})
-
-	t.Run("Pointer", func(t *testing.T) {
-		snaps.MatchSnapshot(t, fmt.Sprint(payload.Pointer))
-	})
 }

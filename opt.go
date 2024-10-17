@@ -61,6 +61,16 @@ func (o *Option[T]) UnmarshalJSON(data []byte) (err error) {
 	return nil
 }
 
+// String returns a string representation of the value.
+// If the value is not provided, String returns "<empty>".
+func (o Option[T]) String() (str string) {
+	if !o.exists {
+		return "<empty>"
+	}
+
+	return fmt.Sprint(o.value)
+}
+
 // Exists reports whether the value was provided.
 func (o Option[T]) Exists() (exists bool) {
 	return o.exists
@@ -85,14 +95,4 @@ func (o Option[T]) GetWithDefault(defaultValue T) (value T) {
 	}
 
 	return o.value
-}
-
-// String returns a string representation of the value.
-// If the value is not provided, String returns "<empty>".
-func (o Option[T]) String() (str string) {
-	if !o.exists {
-		return "<empty>"
-	}
-
-	return fmt.Sprint(o.value)
 }

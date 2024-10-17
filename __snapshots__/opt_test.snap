@@ -80,10 +80,6 @@ default
 <empty>
 ---
 
-[Test_Option/Empty/String/Pointer - 1]
-<empty>
----
-
 [Test_Option/Empty/String/Primitive - 1]
 <empty>
 ---
@@ -172,10 +168,6 @@ default
 
 [Test_Option/Map_empty/String/Map - 1]
 map[]
----
-
-[Test_Option/Map_empty/String/Pointer - 1]
-<empty>
 ---
 
 [Test_Option/Map_empty/String/Primitive - 1]
@@ -274,10 +266,6 @@ default
 map[make:Toyota model:Hilux]
 ---
 
-[Test_Option/Map_full/String/Pointer - 1]
-<empty>
----
-
 [Test_Option/Map_full/String/Primitive - 1]
 <empty>
 ---
@@ -366,10 +354,6 @@ default
 
 [Test_Option/Map_null/String/Map - 1]
 map[]
----
-
-[Test_Option/Map_null/String/Pointer - 1]
-<empty>
 ---
 
 [Test_Option/Map_null/String/Primitive - 1]
@@ -465,10 +449,6 @@ default
 <empty>
 ---
 
-[Test_Option/Pointer_full/String/Pointer - 1]
-0x1400058e3a8
----
-
 [Test_Option/Pointer_full/String/Primitive - 1]
 <empty>
 ---
@@ -562,10 +542,6 @@ default
 <empty>
 ---
 
-[Test_Option/Pointer_null/String/Pointer - 1]
-<nil>
----
-
 [Test_Option/Pointer_null/String/Primitive - 1]
 <empty>
 ---
@@ -656,10 +632,6 @@ hello world
 ---
 
 [Test_Option/Primitive/String/Map - 1]
-<empty>
----
-
-[Test_Option/Primitive/String/Pointer - 1]
 <empty>
 ---
 
@@ -756,10 +728,6 @@ true
 <empty>
 ---
 
-[Test_Option/Primitive_empty/String/Pointer - 1]
-<empty>
----
-
 [Test_Option/Primitive_empty/String/Primitive - 1]
 
 ---
@@ -853,10 +821,6 @@ default
 <empty>
 ---
 
-[Test_Option/Primitive_null/String/Pointer - 1]
-<empty>
----
-
 [Test_Option/Primitive_null/String/Primitive - 1]
 <empty>
 ---
@@ -943,10 +907,6 @@ default
 ---
 
 [Test_Option/Slice_empty/String/Map - 1]
-<empty>
----
-
-[Test_Option/Slice_empty/String/Pointer - 1]
 <empty>
 ---
 
@@ -1047,10 +1007,6 @@ default
 <empty>
 ---
 
-[Test_Option/Slice_full/String/Pointer - 1]
-<empty>
----
-
 [Test_Option/Slice_full/String/Primitive - 1]
 <empty>
 ---
@@ -1137,10 +1093,6 @@ null
 ---
 
 [Test_Option/Slice_null/String/Map - 1]
-<empty>
----
-
-[Test_Option/Slice_null/String/Pointer - 1]
 <empty>
 ---
 
@@ -1237,10 +1189,6 @@ default
 <empty>
 ---
 
-[Test_Option/Struct_empty/String/Pointer - 1]
-<empty>
----
-
 [Test_Option/Struct_empty/String/Primitive - 1]
 <empty>
 ---
@@ -1334,10 +1282,6 @@ default
 <empty>
 ---
 
-[Test_Option/Struct_full/String/Pointer - 1]
-<empty>
----
-
 [Test_Option/Struct_full/String/Primitive - 1]
 <empty>
 ---
@@ -1428,10 +1372,6 @@ default
 ---
 
 [Test_Option/Struct_null/String/Map - 1]
-<empty>
----
-
-[Test_Option/Struct_null/String/Pointer - 1]
 <empty>
 ---
 
